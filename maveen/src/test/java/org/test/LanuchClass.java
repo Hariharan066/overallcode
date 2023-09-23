@@ -1,0 +1,38 @@
+package org.test;
+
+import org.base.BaseClass;
+import org.flipkart.homepage;
+import org.flipkart.page2;
+import org.flipkart.page3;
+
+
+public class LanuchClass extends BaseClass{
+
+	public static void main(String[] args) {
+
+		
+		chromelanuch();
+		UrlLanuch("https://www.flipkart.com/");
+		timeout(10);
+		
+		
+		homepage h = new homepage();
+		Click(h.getCancel());
+		sendkeys(h.getSearchbox(), "nothingmobile");
+		Click(h.getSearchbtn());
+		
+		
+		page2 s = new page2();
+		Click(s.getClc2());
+		
+		WindowsHandels(1);
+		
+		page3 t = new page3();
+		Click(t.getBuy());
+		
+		
+	}
+
+	}
+
+

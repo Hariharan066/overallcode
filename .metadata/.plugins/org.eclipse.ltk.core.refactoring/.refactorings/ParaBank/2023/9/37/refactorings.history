@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.PageObjectModel.RegisterClass&apos; to &apos;RegisterClass1&apos;&#x0D;&#x0A;- Original project: &apos;ParaBank&apos;&#x0D;&#x0A;- Original element: &apos;org.PageObjectModel.RegisterClass&apos;&#x0D;&#x0A;- Renamed element: &apos;org.PageObjectModel.RegisterClass1&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;RegisterClass&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/test\/java&lt;org.PageObjectModel{RegisterClass.java[RegisterClass" matchStrategy="1" name="RegisterClass1" qualified="false" references="true" similarDeclarations="false" stamp="1694322007864" textual="false" version="1.0"/>
+</session>

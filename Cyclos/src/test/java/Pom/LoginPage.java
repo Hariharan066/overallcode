@@ -1,0 +1,57 @@
+package Pom;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import BaseClass.Baseclass;
+
+public class LoginPage extends Baseclass{
+	
+	public LoginPage() {
+		PageFactory.initElements(driver, this);	
+	}
+	@FindBy(xpath=("(//div[@class='ml-2'])[3]"))
+	private WebElement loginclc;
+	@FindBy(xpath=("//input[@type='text']"))
+	private WebElement username;
+	@FindBy(xpath=("//input[@type='password']"))
+	private WebElement pass;
+	@FindBy(xpath=("(//button[@type='button'])[2]"))
+	private WebElement loginbtn;
+	public WebElement getLoginclc() {
+		return loginclc;
+	}
+	public void setLoginclc(WebElement loginclc) {
+		this.loginclc = loginclc;
+	}
+	public WebElement getUsername() {
+		return username;
+	}
+	public void setUsername(WebElement username) {
+		this.username = username;
+	}
+	public WebElement getPass() {
+		return pass;
+	}
+	public void setPass(WebElement pass) {
+		this.pass = pass;
+	}
+	public WebElement getLoginbtn() {
+		return loginbtn;
+	}
+	public void setLoginbtn(WebElement loginbtn) {
+		this.loginbtn = loginbtn;
+	}
+	public void login() {
+		Click(loginclc);
+		sendkeys(username, "hari006");
+		sendkeys(pass, "1234");
+		Click(loginbtn);
+
+	}
+	
+
+	
+
+}

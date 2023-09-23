@@ -1,0 +1,35 @@
+package org.test;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Task {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.facebook.com/");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+	System.out.println("-------Location-----------");	
+	
+		WebElement txtuser = driver.findElement(By.id("email"));
+		txtuser.sendKeys("Hari");
+	
+		WebElement txtpass = driver.findElement(By.id("pass"));
+		txtpass.sendKeys("12345678");
+		
+		//WebElement login = driver.findElement(By.xpath("//button[@value='1']"));
+		//login.click();
+
+		WebElement c = driver.findElement(By.xpath("(//a[@role='button']) [2]"));
+		c.click();
+	}
+
+}

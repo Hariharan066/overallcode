@@ -1,0 +1,17 @@
+package org.String;
+
+public class Stringg {
+	
+	public static void main(String[] args) {
+		//literal String
+		String s1 = "hari";
+		String s2 = "haran";
+		int length = s1.length();
+		System.out.println(length);
+		
+		boolean empty = s1.isEmpty();
+		System.out.println(empty);
+		
+	}
+
+}

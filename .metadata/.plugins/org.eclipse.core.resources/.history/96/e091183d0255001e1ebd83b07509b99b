@@ -1,0 +1,10 @@
+package org.Programs;
+
+public class ArrayProgramClass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

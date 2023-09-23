@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;org.test.neww&apos; to &apos;Action&apos;&#x0D;&#x0A;- Original project: &apos;Selenium&apos;&#x0D;&#x0A;- Original element: &apos;org.test.neww&apos;&#x0D;&#x0A;- Renamed element: &apos;org.test.Action&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;neww&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;org.test{neww.java[neww" matchStrategy="1" name="Action" qualified="false" references="true" similarDeclarations="false" stamp="1693549092527" textual="false" version="1.0"/>
+</session>

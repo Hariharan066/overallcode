@@ -1,0 +1,24 @@
+package org.test;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Xpath {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.facebook.com");
+
+		WebElement c = driver.findElement(By.xpath("//a[text() ='Create a Page']"));
+		String s = c.getText();
+		System.out.println(s);
+		
+		WebElement txtuser = driver.findElement(By.xpath("//input(contains(@id,'email')]"));
+		txtuser.sendKeys("hari");
+	
+	}
+}

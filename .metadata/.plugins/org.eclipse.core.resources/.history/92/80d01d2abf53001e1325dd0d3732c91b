@@ -1,0 +1,76 @@
+package org.Day1Tasks;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
+import org.Baseclass.Basement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class Task4 extends Basement{
+	@Test
+	private void test() {
+		edgeLunch();
+		UrlLanuch("https://www.flipkart.com/");
+		timeout(10);
+
+		WebElement cc = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"));
+		cc.click();
+
+		WebElement srcbox = driver.findElement(By.xpath("//input[@type='text']"));
+		srcbox.sendKeys("iphone");
+
+		WebElement srcbtn = driver.findElement(By.xpath("//button[@type='submit']"));
+		srcbtn.click();
+
+		List<WebElement> totalprice=driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
+		for (int i=0;i<totalprice.size();i++) {
+			System.out.println(totalprice.get(i).getText());
+			String s1 = totalprice.get(i).getText().toString();
+			
+			if (s1.contains("₹")) {
+				s1=s1.replace("₹","" );	
+				
+			}
+			if (s1.contains(",")) {
+				s1=s1.replace(",", "");	
+				int p = Integer.parseInt(s1);
+		//		System.out.println(p);
+				List<Integer> l = new ArrayList<Integer>();
+				l.add(p);
+				System.out.println(Collections.max(l));
+				System.out.println(Collections.min(l));
+				
+		
+				
+			}
+			
+		
+		}
+			
+	}
+//
+//	private void t4() {
+//		List<WebElement> totalprice=driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));
+//		for (int i=0;i<totalprice.size();i++) {
+//			System.out.println(totalprice.get(i).getText());
+//			
+//			String s1 = totalprice.toString();
+//			System.out.println(s1);
+//
+//
+//		}
+
+
+	}
+
+
+
+
+
+
+

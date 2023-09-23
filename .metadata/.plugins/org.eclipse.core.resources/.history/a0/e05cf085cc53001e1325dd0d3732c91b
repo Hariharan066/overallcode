@@ -1,0 +1,84 @@
+package org.Day1Tasks;
+
+import java.util.List;
+
+import org.Baseclass.Basement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Task1 extends Basement{
+	
+	public Task1() {
+	PageFactory.initElements(driver,this);
+	}
+
+	//	@Test
+	//	private void test() {
+	//		edgeLunch();
+	//		UrlLanuch("https://www.flipkart.com/");
+	//		timeout(10);
+	//		
+	//		WebElement cc = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"));
+	//		cc.click();
+	//		
+	//		WebElement srcbox = driver.findElement(By.xpath("//input[@type='text']"));
+	//		srcbox.sendKeys("iphone");
+	//		
+	//		WebElement srcbtn = driver.findElement(By.xpath("//button[@type='submit']"));
+	//		srcbtn.click();
+	//	
+ //  List<WebElement> totalmobile=driver.findElements(By.xpath("//div[@class='_4rR01T'] "));
+				
+
+
+	@FindBy(xpath=("//*[@class='_2KpZ6l _2doB4z'or @class='_30XB9F']"))
+	private WebElement cc;
+	@FindBy(xpath=("//input[@type='text']"))
+	private WebElement srcbox;
+	@FindBy(xpath=("//button[@type='submit']"))
+	private WebElement srcbtn;
+	//@FindBy(xpath=("//div[@class='_4rR01T']"))
+	//private WebElement totalm;
+
+
+//	List<WebElement> totalmobile=driver.findElements(By.xpath("//div[@class='_4rR01T'] "));
+
+	
+	public WebElement getCc() {
+		return cc;
+	}
+
+	public void setCc(WebElement cc) {
+		this.cc = cc;
+	}
+
+	public WebElement getSrcbox() {
+		return srcbox;
+	}
+
+	public void setSrcbox(WebElement srcbox) {
+		this.srcbox = srcbox;
+	}
+
+	public WebElement getSrcbtn() {
+		return srcbtn;
+	}
+
+	public void setSrcbtn(WebElement srcbtn) {
+		this.srcbtn = srcbtn;
+	}
+
+	public void t1() {
+		Click(cc);
+		sendkeys(srcbox, "iphone");
+		Click(srcbtn);
+		List<WebElement> totalmobile=driver.findElements(By.xpath("//div[@class='_4rR01T'] "));
+		System.out.println(totalmobile.size());
+	}
+
+
+}
+
+

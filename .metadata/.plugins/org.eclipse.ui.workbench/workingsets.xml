@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1694583334113_3" label="git" name="git">
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/GitRep2" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1694674248219_4" label="gitnew" name="gitnew"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1690211748008_0" label="Window Working Set" name="Aggregate for window 1690211748008"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1690217746829_1" label="Window Working Set" name="Aggregate for window 1690217746829"/>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1690220558657_2" label="Window Working Set" name="Aggregate for window 1690220558657"/>
+<mruList name="gitnew"/>
+<mruList name="git"/>
+</workingSetManager>

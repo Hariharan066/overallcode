@@ -1,0 +1,19 @@
+package org.junit;
+
+public class Sample {
+	
+@BeforeClass
+public static void before() {
+	System.out.println("beforeclass");
+}
+@AfterClass
+public static void afterclass() {
+	System.out.println("afterclass");
+}
+@Test
+public void test() {
+	System.out.println("test");
+
+}
+
+}

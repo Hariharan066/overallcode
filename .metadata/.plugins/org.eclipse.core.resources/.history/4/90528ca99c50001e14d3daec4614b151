@@ -1,0 +1,26 @@
+package org.String;
+
+public class Stringg {
+	
+	public static void main(String[] args) {
+		//literal String
+		String s1 = "Welcome";
+		String s2 = "haran";
+		int length = s1.length();
+		System.out.println(length);
+		//isEmpty
+		boolean empty = s1.isEmpty();
+		System.out.println(empty);
+		//chart
+		char charAt = s1.charAt(2);
+		System.out.println(charAt);
+		//indexof
+		int indexOf = s1.indexOf("c");
+		System.out.println(indexOf);
+		//lastindexof
+		int lastIndexOf = s1.lastIndexOf("e");
+		System.out.println(lastIndexOf);
+		
+	}
+
+}

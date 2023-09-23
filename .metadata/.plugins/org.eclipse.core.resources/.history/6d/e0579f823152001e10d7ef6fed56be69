@@ -1,0 +1,10 @@
+package org.Day1Tasks;
+
+import org.Baseclass.Basement;
+
+public class Task4 extends Basement{
+	
+}
+	
+	
+

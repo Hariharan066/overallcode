@@ -1,0 +1,38 @@
+package org.test;
+
+import java.time.Duration;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class WebTable {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new ChromeDriver();
+		driver.get("https://www.w3schools.com/html/html_tables.asp");
+		
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		
+		List<WebElement> tables = driver.findElements(By.tagName("table"));
+		System.out.println(tables.size());
+		
+	
+		WebElement tablel = tables.get(0);
+		
+		
+		String t = tablel.getText();
+		System.out.println(t);
+		
+		
+		
+		
+		
+
+	}
+
+}

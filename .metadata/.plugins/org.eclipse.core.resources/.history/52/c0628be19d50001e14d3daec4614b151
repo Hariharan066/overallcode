@@ -1,0 +1,33 @@
+package org.String;
+
+public class Stringg {
+	
+	public static void main(String[] args) {
+		//literal String
+		String s1 = "Welcome";
+		String s2 = "haran";
+		int length = s1.length();
+		System.out.println("lenth count->"+length);
+		//isEmpty
+		boolean empty = s1.isEmpty();
+		System.out.println("empty or not empty check->"+empty);
+		//chart
+		char charAt = s1.charAt(2);
+		System.out.println("get particular char "+charAt);
+		//indexof
+		int indexOf = s1.indexOf("e");
+		System.out.println("first index count"+indexOf);
+		//lastindexof
+		int lastIndexOf = s1.lastIndexOf("e");
+		System.out.println("last index count"+lastIndexOf);
+		//touppercase
+		String upperCase = s1.toUpperCase();
+		System.out.println("uppercase"+upperCase);
+		//lowercase
+		String lower = s1.toLowerCase();
+		System.out.println("lowercase->"+lower);
+		
+		
+	}
+
+}

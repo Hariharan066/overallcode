@@ -1,0 +1,37 @@
+package Lunch;
+
+import java.util.Date;
+
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+import BaseClass.Baseclass;
+import Pom.LoginPage;
+
+public class TestClass extends Baseclass{
+	@BeforeClass
+	private void edge() {
+		edgeLunch();
+		UrlLanuch("https://demo.cyclos.org/ui/home");
+		timeout(10);
+	}
+	@BeforeMethod
+	private void bef() {
+		Date d = new Date();
+		System.out.println(d);
+	}
+	@Test
+	private void test() throws InterruptedException {
+		LoginPage l = new LoginPage();
+		l.login();
+
+	}
+	@AfterMethod
+	private void af() {
+		
+
+	}
+
+}

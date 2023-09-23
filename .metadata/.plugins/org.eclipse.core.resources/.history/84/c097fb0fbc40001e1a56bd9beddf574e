@@ -1,0 +1,33 @@
+package org.scan;
+import java.util.Scanner;
+public class Scannerr {
+	public static void main(String[] args) {
+		
+		Scanner s = new Scanner(System.in);
+		//next 
+		
+		System.out.println("enter your name....");
+		String name = s.next();
+		String fullname =s.nextLine();
+		System.out.println("my name is "+name);
+		System.out.println("my name is "+fullname);
+		
+
+		//
+		
+		System.out.println("enter your id....");
+		byte id = s.nextByte();
+		System.out.println("my id is"+id);
+
+		
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+
+}

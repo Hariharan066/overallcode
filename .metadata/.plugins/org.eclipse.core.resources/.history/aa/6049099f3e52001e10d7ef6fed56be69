@@ -1,0 +1,50 @@
+package org.Day1Tasks;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.Baseclass.Basement;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
+
+public class Test5 extends Basement{
+
+
+	@Test
+	private void lunch() throws InterruptedException {
+		edgeLunch();
+		UrlLanuch("https://www.flipkart.com/");
+		timeout(10);
+
+		WebElement cc = driver.findElement(By.xpath("//button[@class='_2KpZ6l _2doB4z']"));
+		cc.click();
+
+		WebElement srcbox = driver.findElement(By.xpath("//input[@type='text']"));
+		srcbox.sendKeys("iphone");
+
+		WebElement srcbtn = driver.findElement(By.xpath("//button[@type='submit']"));
+		srcbtn.click();
+		  Map<WebElement, WebElement> hm = new LinkedHashMap<WebElement, WebElement>();
+		
+
+			WebElement	t1 = null ;
+			WebElement	t2 = null ;
+			
+			List<WebElement> total=driver.findElements(By.xpath("//div[@class='_4rR01T'] "));
+			List<WebElement> totalprice=driver.findElements(By.xpath("//div[@class='_30jeq3 _1_WHN1']"));	
+
+			for (int j=0;j<total.size();j++) {
+					t1 = total.get(j);
+					t2= totalprice.get(j);
+			}
+			
+			hm.put(t1, t2);
+			System.out.println(hm);
+		}
+
+	}
+
+
+
